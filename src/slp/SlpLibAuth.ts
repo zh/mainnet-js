@@ -8,10 +8,9 @@ import {
 import bchaddr from "bchaddrjs-slp";
 
 import { SendRequest } from "../wallet/model";
-import { SlpUtxoI } from "./interface";
+import { SlpGenesisOptions, SlpSendRequest, SlpUtxoI } from "../slp/interface";
 
 import BigNumber from "bignumber.js";
-import { SlpGenesisOptions, SlpSendRequest } from "../Slp/interface";
 import { DUST_UTXO_THRESHOLD } from "../constant";
 import { UnitEnum } from "../enum";
 

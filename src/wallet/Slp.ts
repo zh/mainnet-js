@@ -1,4 +1,4 @@
-import { Wallet } from "./wif";
+import { Wallet } from "../wallet/Wif";
 import bchaddr from "bchaddrjs-slp";
 import {
   SlpGenesisOptions,
