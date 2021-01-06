@@ -74,6 +74,7 @@
     "axios": "^0.20.0",
     "bchaddrjs-slp": "^0.2.11",
     "bignumber": "^1.1.0",
+    "bignumber.js": "^9.0.1",
     "bip39": "^3.0.3",
     "cashscript": "^0.5.7",
     "deepmerge": "^4.2.2",
