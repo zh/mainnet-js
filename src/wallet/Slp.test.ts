@@ -324,7 +324,7 @@ describe("Slp wallet tests", () => {
           value: 20,
         },
       ]);
-    }, 1000);
+    }, 5000);
     const balance = await bobWallet.slp.waitForBalance(
       10,
       genesisOptions.ticker
@@ -349,7 +349,7 @@ describe("Slp wallet tests", () => {
           value: 20,
         },
       ]);
-    }, 1000);
+    }, 5000);
     const transaction = await bobWallet.slp.waitForTransaction(
       genesisOptions.ticker
     );
