@@ -5,7 +5,7 @@ import { disconnectProviders, initProviders } from "../network";
 
 import { mine } from "../mine";
 
-import { SlpGenesisOptions, SlpGenesisResult } from "../Slp/interface";
+import { SlpGenesisOptions, SlpGenesisResult } from "../slp/interface";
 import { DUST_UTXO_THRESHOLD } from "../constant";
 
 describe("Slp wallet tests", () => {

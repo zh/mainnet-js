@@ -6,7 +6,7 @@ import {
   SlpGetMintOutputs,
   SlpGetSendOutputs,
 } from "../slp/SlpLibAuth";
-import { SlpGenesisOptions, SlpSendRequest } from "../Slp/interface";
+import { SlpGenesisOptions, SlpSendRequest } from "../slp/interface";
 import { RegTestWallet } from "../wallet/Wif";
 import { SlpUtxoI } from "./interface";
 import BigNumber from "bignumber.js";
