@@ -172,7 +172,7 @@ export class SlpDbProvider implements SlpProvider {
     ticker?: string,
     tokenId?: string
   ): SlpCancelWatchFn {
-    const eventSource = this.SlpSocketEventSource(
+    const eventSource: EventSource = this.SlpSocketEventSource(
       SlpWaitForTransactionTemplate(cashaddr, ticker, tokenId)
     );
     const cancelFn: SlpCancelWatchFn = () => {
@@ -182,9 +182,10 @@ export class SlpDbProvider implements SlpProvider {
     eventSource.addEventListener(
       "message",
       (txEvent: MessageEvent) => {
+        console.debug(txEvent);
         const data = JSON.parse(txEvent.data);
         if (data.data && data.data.length) {
-          if (callback(data.data[0])) {
+          if (!!callback(data.data[0])) {
             cancelFn();
           }
         }
